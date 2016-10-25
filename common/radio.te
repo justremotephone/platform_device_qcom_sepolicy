@@ -2,7 +2,7 @@
 qmux_socket(radio);
 
 #Need permission to execute com.qualcomm.qti.telephony/app_dex/xx
-allow radio radio_data_file:file x_file_perms;
+#allow radio radio_data_file:file x_file_perms;
 
 #Need permission to execute dpmd talk to radio layer
 unix_socket_connect(radio, dpmd, dpmd)
